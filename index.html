@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ninja.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorteador <span>de Números</span></h1>
+            <p class="subtitle">Escolha sua sorte, Dattebayo!</p>
+        </header>
+
+        <main class="form-sorteio">
+            <div class="input-group">
+                <label for="quantidade">Quantidade de números</label>
+                <input type="number" id="quantidade" placeholder="Ex: 1">
+            </div>
+
+            <div class="input-group">
+                <label for="do-numero">Do número</label>
+                <input type="number" id="do-numero" placeholder="Ex: 1">
+            </div>
+
+            <div class="input-group">
+                <label for="ate-numero">Até o número</label>
+                <input type="number" id="ate-numero" placeholder="Ex: 100">
+            </div>
+
+            <div class="buttons">
+                <button id="sortear" class="btn-principal" onclick="jutsu()">Jutsu</button>
+                <button id="reiniciar" class="btn-secundario" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </main>
+
+        <section class="resultado">
+            <p id="texto-resultado">Números sorteados: nenhum até agora</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
